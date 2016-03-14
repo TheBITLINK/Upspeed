@@ -37,5 +37,6 @@ label
     position: absolute;
     width: 100%;
     text-align: center;
-    bottom: 0;
+    top: 512px;
+    padding-bottom: 16px;
 }

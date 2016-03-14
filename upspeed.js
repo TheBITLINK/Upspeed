@@ -66,5 +66,5 @@ var upspeed = new Upspeed('b2568f1fd1ca4d61013a8102c9526ae8');
 
 if(document.location.pathname != '/Upspeed/')
 {
-    upspeed.playSong('https://www.soundcloud.com/'+ document.location.pathname.match(/\/Upspeed\/([^?]+)(?:\??.+)?/)[1], true);
+    upspeed.playSong('https://soundcloud.com/'+ document.location.pathname.match(/\/Upspeed\/([^?]+)(?:\??.+)?/)[1], true);
 }

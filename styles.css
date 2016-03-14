@@ -1,0 +1,41 @@
+body
+{
+    background: #111111;
+    color: #efefef;
+}
+
+label
+{
+    color: rgba(255, 255, 255, .5)!important;
+}
+
+.mdl-textfield__input {
+    border-bottom: 1px solid rgba(255,255,255,.12);
+}
+
+#nowPlaying
+{
+    max-width: 480px;
+}
+
+#coverArt
+{
+    float: left;
+    width: 128px;
+    height: 128px;
+    background: #333333;
+}
+
+#songData
+{
+    text-align: left;
+    padding-left: 142px;
+}
+
+#footer
+{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+}

@@ -16,7 +16,7 @@ Upspeed.prototype.playSong = function(song_url, dontPushState) {
     if(!(song_url.match(regexp) && song_url.match(regexp)[2])) return;
     if(!dontPushState) {
         var relativeUrl = song_url.match(/(http[s]?:\/\/)?([^\/\s]+\/)(.*)/)[3];
-        history.pushState({songUrl: song_url}, "", "/upspeed/" + relativeUrl);
+        history.pushState({songUrl: song_url}, "", "/Upspeed/" + relativeUrl);
     }
     var that = this;
     this.currentTrackUrl = song_url;
@@ -64,7 +64,7 @@ Upspeed.prototype.startPlaying = function() {
 var upspeed = new Upspeed('b2568f1fd1ca4d61013a8102c9526ae8');
 
 
-if(document.location.pathname != '/upspeed/')
+if(document.location.pathname != '/Upspeed/')
 {
     upspeed.playSong('https://www.soundcloud.com/'+ document.location.pathname.match(/\/upspeed\/([^?]+)(?:\??.+)?/)[1], true);
 }
